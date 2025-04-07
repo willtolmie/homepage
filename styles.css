@@ -35,7 +35,17 @@ h1 {
 h2 {
   margin: 0 0;
   font-size: 1.5rem;
+  font-weight: normal;
   align-items: center;
+  text-align: center;
+  color: slategrey;
+}
+h2:hover {
+  margin: 0 0;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
 }
 h4 {
   padding-top: 5px;
@@ -118,7 +128,7 @@ h3 {
   height: 600px;
 }
 .blueContainer {
-  margin-top: 30px;
+  margin-top: 200px;
   background-color: white;
   align-items: center;
   padding: 0 30%;
