@@ -1,202 +1,418 @@
-<!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <!-- import CSS styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <!-- page content goes into <body> -->
   <body>
-    <div id="logoBar">
-      <!-- <h1 class="left">STUDIO TOLMIE<span class="lineRight"></span></h1> -->
-      <h1 class="right">
-        <span class="lineLeft"></span>
-        <div class="navBarItem">
-          <a
-            style="text-decoration: none; color: black"
-            href="https://willtolmie.github.io/homepage/"
-            >HOME</a
-          >
+    <section id="about">
+      <div class="twoColumns">
+        <div class="sidebar">
+          <h1 class="left">
+            <div>
+              <a class="navBarItem" href="#about">ABOUT ME</a>
+            </div>
+          </h1>
+          <h1 class="left">
+            <div>
+              <a class="navBarItem" href="#projects">PROJECTS</a>
+            </div>
+          </h1>
+          <h1 class="left">
+            <div>
+              <a href="#resume" class="navBarItem">RÉSUMÉ</a>
+            </div>
+          </h1>
         </div>
-        <div class="navBarItem">
-          <a style="text-decoration: none; color: black" href="#projects"
-            >PROJECTS</a
-          >
-        </div>
-        <div class="navBarItem">
-          <a style="text-decoration: none; color: black" href="#resume"
-            >RÉSUMÉ</a
-          >
-        </div>
-      </h1>
-    </div>
-    <div class="container">
-      <div class="blueContainer">
-        <div>
-          <img src="assets/1727080333814.jpeg" alt="" class="galleryImage" />
-        </div>
-        <div>
-          <h3>Hi! I’m</h3>
-          <h2>WILL TOLMIE,</h2>
-          <h3>
-            a researcher, developer, and storyteller studying applied
-            math-economics and computer science at Brown University.
-          </h3>
+        <div class="container">
+          <div class="blueContainer">
+            <div class="imageBox">
+              <img
+                src="assets/ezgif-21b23634759f12-ezgif.com-loop-count.gif"
+                alt=""
+                class="mainImage galleryImage"
+              />
+            </div>
+            <div class="intro">
+              <h3>Hi! I’m</h3>
+              <h2>WILL TOLMIE,</h2>
+              <h3>
+                a <span style="color: rgb(51, 65, 166)">researcher,</span>
+                <span style="color: rgb(44, 112, 89)">developer,</span> and
+                <span style="color: rgb(103, 59, 185)">storyteller</span>
+                studying applied math-economics and computer science at Brown
+                University.
+              </h3>
+            </div>
+          </div>
+          <section id="projects">
+            <br />
+            <h1 class="sectionTitle">PROJECTS</h1>
+            <div class="projectGrid">
+              <div class="project">
+                <a
+                  style="text-decoration: none"
+                  href="https://willtolmie.github.io/accessible-components/"
+                  class="projectName code"
+                >
+                  <img src="assets/lululemon.jpg" class="projectImage" />
+                  <h3>Augmenting the accessibility of pop-up windows</h3>
+                </a>
+                <a
+                  style="text-decoration: none"
+                  href="https://cs.brown.edu/courses/csci1300/"
+                >
+                  <h4 class="companyName">CSCI 1300: Interaction Design</h4>
+                </a>
+              </div>
+              <div class="project">
+                <a
+                  style="text-decoration: none"
+                  href="https://willtolmie.github.io/personas-and-storyboarding/"
+                  class="projectName code"
+                >
+                  <img src="assets/coca-cola.jpg" class="projectImage" />
+                  <h3>
+                    Illustrating user personas based on empirical observation
+                  </h3>
+                </a>
+                <a
+                  style="text-decoration: none"
+                  href="https://cs.brown.edu/courses/csci1300/"
+                >
+                  <h4 class="companyName">CSCI 1300: Interaction Design</h4>
+                </a>
+              </div>
+              <div class="project">
+                <a
+                  style="text-decoration: none"
+                  href="https://willtolmie.github.io/responsive-redesign/"
+                  class="projectName code"
+                >
+                  <img
+                    src="assets/redesigned website.png"
+                    class="projectImage"
+                  />
+                  <h3>
+                    Building a responsive redesign of a restaurant website
+                  </h3>
+                </a>
+                <a
+                  style="text-decoration: none"
+                  href="https://cs.brown.edu/courses/csci1300/"
+                >
+                  <h4 class="companyName">CSCI 1300: Interaction Design</h4>
+                </a>
+              </div>
+              <div class="project">
+                <a
+                  style="text-decoration: none"
+                  href="https://willtolmie.github.io/iterative-design-and-evaluation/"
+                  class="projectName code"
+                >
+                  <img src="assets/partiful.png" class="projectImage" />
+                  <h3>
+                    Envisioning a seamless photo-sharing flow for Partiful
+                  </h3>
+                </a>
+                <a
+                  style="text-decoration: none"
+                  href="https://cs.brown.edu/courses/csci1300/"
+                >
+                  <h4 class="companyName">CSCI 1300: Interaction Design</h4>
+                </a>
+              </div>
+              <div class="project">
+                <a
+                  style="text-decoration: none"
+                  href="https://www.zelma.ai/"
+                  class="projectName research"
+                >
+                  <img src="assets/zelma-screenshot.png" class="projectImage" />
+                  <h3>Unlocking the potential of state assessment results</h3>
+                </a>
+                <a style="text-decoration: none" href="https://www.zelma.ai/">
+                  <h4 class="companyName">Zelma Education</h4>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section id="resume">
+            <br />
+            <h1>
+              <a
+                class="resumeLink sectionTitle"
+                href="https://drive.google.com/file/d/1G_Jn6FJtfoJ1AuAOlsKBI99lAPb5iM9G/view?usp=sharing"
+              >
+                RÉSUMÉ ↗</a
+              >
+            </h1>
+            <div class="resumeContainer">
+              <div class="resumeHover storyteller">
+                <div class="resumeEntry">
+                  <div class="timeSpan">JAN 2025 – PRESENT</div>
+                  <div class="activity">
+                    <h4>
+                      Research and Content Intern •
+                      <a
+                        href="https://www.brownopinionproject.org/"
+                        class="resumeCompanyName"
+                        >Beluga ↗
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="resumeEntry">
+                  <div class="timeSpan"></div>
+                  <div class="activity">
+                    Analyze existing cryptocurrency resources to pinpoint
+                    missing or underexplored areas in cryptocurrency education.
+                    Write short-form instructional content and step-by-step
+                    guides to introduce newcomers to key cryptocurrency
+                    concepts.
+                    <div class="associatedProjectsContainer">
+                      <a
+                        style="text-decoration: none; color: black"
+                        href="https://heybeluga.com/articles/trump-impact-on-crypto/"
+                      >
+                        <div class="associatedProject story">
+                          <img
+                            src="assets/download (1).webp"
+                            class="associatedProjectImage"
+                          />
+                          President Trump and Crypto ↗
+                        </div>
+                      </a>
+                      <a
+                        style="text-decoration: none; color: black"
+                        href="https://heybeluga.com/articles/best-altcoins-2025-ethereum-xrp-solana-cardano-rwa/"
+                      >
+                        <div class="associatedProject story">
+                          <img
+                            src="assets/OQXI_7_SWXBRLR_7_EAIXRDLSFTAOQ_5f6afd6827.jpg"
+                            class="associatedProjectImage"
+                          />
+                          Altcoins and the United States Digital Asset Stockpile
+                          ↗
+                        </div>
+                      </a>
+                      <a
+                        style="text-decoration: none; color: black"
+                        href="https://www.instagram.com/p/Crylw6vuIj3/?img_index=1"
+                      >
+                        <div class="associatedProject story">
+                          <img
+                            src="assets/GettyImages-2149257459-e1732629807720 (1).webp"
+                            class="associatedProjectImage"
+                          />
+                          Smart Contracts ↗
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="resumeHover researcher">
+                <div class="resumeEntry">
+                  <div class="timeSpan">FEB 2023 – PRESENT</div>
+                  <div class="activity">
+                    <h4>
+                      Marketing & Social Media Director •
+                      <a
+                        href="https://www.brownopinionproject.org/"
+                        class="resumeCompanyName"
+                        >Brown Opinion Project ↗
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="resumeEntry">
+                  <div class="timeSpan"></div>
+                  <div class="activity">
+                    Mentor a team creating data visualizations which capture
+                    student opinion to facilitate meaningful discussions on
+                    campus.
+                    <div class="associatedProjectsContainer">
+                      <a
+                        style="text-decoration: none; color: black"
+                        href="https://www.instagram.com/p/Cpx5DWSgkHt/?img_index=1"
+                      >
+                        <div class="associatedProject research">
+                          <img
+                            src="assets/335731470_166305259563702_5123700244145108179_n.jpg"
+                            class="associatedProjectImage"
+                          />
+                          Brown Students and ChatGPT ↗
+                        </div>
+                      </a>
+                      <a
+                        style="text-decoration: none; color: black"
+                        href="https://www.instagram.com/p/Cq6IWxAPiIo/"
+                      >
+                        <div class="associatedProject research">
+                          <img
+                            src="assets/340497164_892468108714169_243400425585013794_n.jpg"
+                            class="associatedProjectImage"
+                          />
+                          Brown Students and the 2nd Amendment ↗
+                        </div>
+                      </a>
+                      <a
+                        style="text-decoration: none; color: black"
+                        href="https://www.instagram.com/p/Crylw6vuIj3/?img_index=1"
+                      >
+                        <div class="associatedProject research">
+                          <img
+                            src="assets/344498127_784661636259689_7180157078943688198_n.jpg"
+                            class="associatedProjectImage"
+                          />
+                          Brown Students and the Supreme Court ↗
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="resumeHover storyteller">
+                <div class="resumeEntry">
+                  <div class="timeSpan">JAN 2025 – PRESENT</div>
+                  <div class="activity">
+                    <h4>
+                      Teaching Assistant •
+                      <a
+                        href="https://copsy.brown.edu/"
+                        class="resumeCompanyName"
+                        >Brown University CoPsy Department ↗
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="resumeEntry">
+                  <div class="timeSpan"></div>
+                  <div class="activity">
+                    Supplement instruction of “Making Decisions,” a 200-student
+                    course considering the psychology of human decision-making.
+                    Organize weekly office hours and review sessions to enrich
+                    student understanding and support student performance.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="resumeHover researcher">
+                <div class="resumeEntry">
+                  <div class="timeSpan">JUN – AUG 2024</div>
+                  <div class="activity">
+                    <h4>
+                      Summer Analyst •
+                      <a
+                        href="https://nzcapitalgroup.com/"
+                        class="resumeCompanyName"
+                        >Net Zero Capital ↗
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="resumeEntry">
+                  <div class="timeSpan"></div>
+                  <div class="activity">
+                    Constructed a framework for evaluating the progress of firms
+                    toward net-zero carbon emissions by 2050 using company-
+                    specific disclosures and industry projections. Built a
+                    database assessing companies (beginning with the S&P 500)
+                    against the framework to enable the construction of a
+                    portfolio which mitigates the investment risk of future
+                    efforts to internalize the price of carbon emissions (e.g.,
+                    carbon taxes). Created stock recommendations and
+                    company-specific research reports to be shared with
+                    prospective investors.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="resumeHover storyteller">
+                <div class="resumeEntry">
+                  <div class="timeSpan">SEP 2022 – MAY 2024</div>
+                  <div class="activity">
+                    <h4>
+                      Managing Editor •
+                      <a
+                        href="https://www.theifj.com/"
+                        class="resumeCompanyName"
+                        >Intercollegiate Finance Journal ↗
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="resumeEntry">
+                  <div class="timeSpan"></div>
+                  <div class="activity">
+                    Developed staff writers’ long-form articles for a
+                    publication reporting on news related to business, politics,
+                    and technology. Articles include “Patagonia: A Paradigm of
+                    Virtue” and “Save Up or Miss Out: Netflix’s Password Sharing
+                    Crackdown.”
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="resumeHover researcher">
+                <div class="resumeEntry">
+                  <div class="timeSpan">FEB – DEC 2023</div>
+                  <div class="activity">
+                    <h4>
+                      Research Assistant •
+                      <a href="https://www.zelma.ai/" class="resumeCompanyName"
+                        >Dr. Emily Oster & Zelma Education ↗
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="resumeEntry">
+                  <div class="timeSpan"></div>
+                  <div class="activity">
+                    Generated insights into student proficiency trends and
+                    changes in achievement gaps using standardized assessment
+                    data. Provided student outcome data for Zelma Education (now
+                    the Education Data Center), an interactive, AI-powered U.S.
+                    state assessment data repository.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="resumeHover storyteller">
+                <div class="resumeEntry">
+                  <div class="timeSpan">OCT 2018 – AUG 2022</div>
+                  <div class="activity">
+                    <h4>
+                      Executive Director •
+                      <a href="http://kipbayarea.org/" class="resumeCompanyName"
+                        >Knowledge Is Power ↗
+                      </a>
+                    </h4>
+                  </div>
+                </div>
+                <div class="resumeEntry">
+                  <div class="timeSpan"></div>
+                  <div class="activity">
+                    Managed a 501(c)(3) organization distributing books in
+                    English and Spanish to immigrant and underserved children.
+                    Partnered with local health centers including the San
+                    Francisco-Marin Food Bank, the California Women, Infants &
+                    Children Program, Marin Community Clinics, Canal Alliance,
+                    and the Multicultural Center of Marin to operate at food
+                    distributions.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+          </section>
         </div>
       </div>
-      <section id="projects">
-        <h1>PROJECTS</h1>
-        <div class="whiteContainer">
-          <a
-            style="text-decoration: none"
-            href="https://willtolmie.github.io/accessible-components/"
-          >
-            <h3>Pop-Up Window Redesign</h3>
-          </a>
-          <br />
-          <a
-            style="text-decoration: none"
-            href="https://willtolmie.github.io/personas-and-storyboarding/"
-          >
-            <h3>Personas & Storyboarding</h3>
-          </a>
-          <br />
-          <a
-            style="text-decoration: none"
-            href="https://willtolmie.github.io/responsive-redesign/"
-          >
-            <h3>Responsive Redesign</h3>
-          </a>
-        </div>
-      </section>
-      <section id="resume">
-        <br />
-        <h1>RÉSUMÉ</h1>
-        <div class="resumeContainer">
-          <div class="resumeEntry">
-            <div class="timeSpan">JANUARY 2025 – PRESENT</div>
-            <div class="activity">
-              <h4>Beluga • Research and Content Intern</h4>
-            </div>
-          </div>
-          <div class="resumeEntry">
-            <div class="timeSpan"></div>
-            <div class="activity">
-              Analyze existing cryptocurrency resources to pinpoint missing or
-              underexplored areas in cryptocurrency education. Write short-form
-              instructional content and step-by-step guides to introduce
-              newcomers to key cryptocurrency concepts.
-            </div>
-          </div>
-          <br />
-          <div class="resumeEntry">
-            <div class="timeSpan">FEBRUARY 2023 – PRESENT</div>
-            <div class="activity">
-              <h4>Brown Opinion Project • Marketing & Social Media Director</h4>
-            </div>
-          </div>
-          <div class="resumeEntry">
-            <div class="timeSpan"></div>
-            <div class="activity">
-              Mentor a team creating data visualizations which capture student
-              opinion to facilitate meaningful discussions on campus.
-            </div>
-          </div>
-          <br />
-          <div class="resumeEntry">
-            <div class="timeSpan">JANUARY 2025 – PRESENT</div>
-            <div class="activity">
-              <h4>Brown University CoPsy Department • Teaching Assistant</h4>
-            </div>
-          </div>
-          <div class="resumeEntry">
-            <div class="timeSpan"></div>
-            <div class="activity">
-              Supplement instruction of “Making Decisions,” a 200-student course
-              considering the psychology of human decision-making. Organize
-              weekly office hours and review sessions to enrich student
-              understanding and support student performance.
-            </div>
-          </div>
-          <br />
-          <div class="resumeEntry">
-            <div class="timeSpan">JUNE 2024 – AUGUST 2024</div>
-            <div class="activity">
-              <h4>Net Zero Capital • Summer Analyst</h4>
-            </div>
-          </div>
-          <div class="resumeEntry">
-            <div class="timeSpan"></div>
-            <div class="activity">
-              Constructed a framework for evaluating the progress of firms
-              toward net-zero carbon emissions by 2050 using company- specific
-              disclosures and industry projections. Built a database assessing
-              companies (beginning with the S&P 500) against the framework to
-              enable the construction of a portfolio which mitigates the
-              investment risk of future efforts to internalize the price of
-              carbon emissions (e.g., carbon taxes). Created stock
-              recommendations and company-specific research reports to be shared
-              with prospective investors.
-            </div>
-          </div>
-          <br />
-          <div class="resumeEntry">
-            <div class="timeSpan">SEPTEMBER 2022 – MAY 2024</div>
-            <div class="activity">
-              <h4>Intercollegiate Finance Journal • Managing Editor</h4>
-            </div>
-          </div>
-          <div class="resumeEntry">
-            <div class="timeSpan"></div>
-            <div class="activity">
-              Developed staff writers’ long-form articles for a publication
-              reporting on news related to business, politics, and technology.
-              Articles include “Patagonia: A Paradigm of Virtue” and “Save Up or
-              Miss Out: Netflix’s Password Sharing Crackdown.”
-            </div>
-          </div>
-          <br />
-          <div class="resumeEntry">
-            <div class="timeSpan">FEBRUARY 2023 – DECEMBER 2023</div>
-            <div class="activity">
-              <h4>Dr. Emily Oster • Research Assistant</h4>
-            </div>
-          </div>
-          <div class="resumeEntry">
-            <div class="timeSpan"></div>
-            <div class="activity">
-              Generated insights into student proficiency trends and changes in
-              achievement gaps using standardized assessment data. Provided
-              student outcome data for Zelma Education, an interactive,
-              AI-powered U.S. state assessment data repository.
-            </div>
-          </div>
-          <br />
-          <div class="resumeEntry">
-            <div class="timeSpan">OCTOBER 2018 – AUGUST 2022</div>
-            <div class="activity">
-              <h4>Knowledge is Power • Executive Director</h4>
-            </div>
-          </div>
-          <div class="resumeEntry">
-            <div class="timeSpan"></div>
-            <div class="activity">
-              Managed a 501(c)(3) organization distributing books in English and
-              Spanish to immigrant and underserved children. Partnered with
-              local health centers including the San Francisco-Marin Food Bank,
-              the California Women, Infants & Children Program, Marin Community
-              Clinics, Canal Alliance, and the Multicultural Center of Marin to
-              operate at food distributions.
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </section>
   </body>
 </html>
